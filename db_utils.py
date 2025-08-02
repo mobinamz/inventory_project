@@ -10,7 +10,7 @@ def create_database():
         print('error database',e)
     finally:
         cu.close()
-        c.close
+        c.close()
 
 def create_table():
     c=get_connection()
