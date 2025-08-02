@@ -5,7 +5,7 @@ def add_product(product,number,price):
         cu=c.cursor()
         query='insert into product(product_name,number,price)values(%s,%s,%s)'
         prod=(product,number,price)
-        cu1.execute(query,prod)
+        cu.execute(query,prod)
         print(f'product added with id {cu1.lastrowid}')
         c.commit()
     except Exception as e:
